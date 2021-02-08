@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It is Valentine</title>
+    <link href="{% static 'valentine/style.css'%}" rel="stylesheet">
+   <style>
+     /*in css file in static folder of valentine*/
+   </style>   
+  
+</head>
+
+<body>
+    <!-- with the help of django we can use variables in our html file : conditional statement goes in -->
+    {% if valentine %}  
+       <h1>YES</h1>
+    {% else %}
+       <h1 >NO</h1>
+    {% endif %}  <!-- ending tag in django-->
+</body>
+</html>
